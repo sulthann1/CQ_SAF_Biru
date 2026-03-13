@@ -143,7 +143,7 @@ namespace praktikum4
             {
                 Koneksi();
                 conn.Open();
-                string query = "INSERT INTO Program Studi VALUES ('MI01','Manajemen Informatika')";
+                string query = "INSERT INTO ProgramStudi VALUES ('MI01','Manajemen Informatika')";
                 cmd = new SqlCommand(query, conn);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Data Program Studi berhasil ditambahkan!");
