@@ -101,7 +101,7 @@ namespace praktikum4
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)    
+        private void buttonHitungDs_Click(object sender, EventArgs e)    
         {
             try
             {
@@ -119,9 +119,22 @@ namespace praktikum4
             }
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void buttonUpdateMk_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                Koneksi();
+                conn.Open();
+                string query = "UPDATE MataKuliah SET SKS = 4 WHERE KodeMK = 'IF210101'";
+                cmd = new SqlCommand(query, conn);
+                int hasil = cmd.ExecuteNonQuery();
+                MessageBox.Show("Jumlah baris terpengaruh = " + hasil);
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
