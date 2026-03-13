@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtHasil = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -36,12 +36,12 @@
             this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtHasil
             // 
-            this.textBox1.Location = new System.Drawing.Point(179, 114);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(450, 22);
-            this.textBox1.TabIndex = 0;
+            this.txtHasil.Location = new System.Drawing.Point(179, 114);
+            this.txtHasil.Name = "txtHasil";
+            this.txtHasil.Size = new System.Drawing.Size(450, 22);
+            this.txtHasil.TabIndex = 0;
             // 
             // label1
             // 
@@ -60,6 +60,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Connect";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // button2
             // 
@@ -69,6 +70,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Hitung Mhs";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btnHitungMhs_Click);
             // 
             // button3
             // 
@@ -78,6 +80,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Hitung Mk";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btnHitungMK_Click);
             // 
             // button4
             // 
@@ -87,6 +90,7 @@
             this.button4.TabIndex = 5;
             this.button4.Text = "Update";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // Form1
             // 
@@ -98,7 +102,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtHasil);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -109,7 +113,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtHasil;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
