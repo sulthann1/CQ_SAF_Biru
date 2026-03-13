@@ -137,9 +137,22 @@ namespace praktikum4
             }
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void buttonInputPr_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                Koneksi();
+                conn.Open();
+                string query = "INSERT INTO Program Studi VALUES ('MI01','Manajemen Informatika')";
+                cmd = new SqlCommand(query, conn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Data Program Studi berhasil ditambahkan!");
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
