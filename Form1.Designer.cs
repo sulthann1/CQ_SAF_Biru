@@ -103,7 +103,7 @@
             this.button5.TabIndex = 6;
             this.button5.Text = "Hitung Ds";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.buttonHitungDs_Click);
             // 
             // button6
             // 
@@ -113,7 +113,7 @@
             this.button6.TabIndex = 7;
             this.button6.Text = "Update Mk";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.buttonUpdateMk_Click);
             // 
             // button7
             // 
@@ -123,6 +123,7 @@
             this.button7.TabIndex = 8;
             this.button7.Text = "Input Pr";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Form1
             // 
